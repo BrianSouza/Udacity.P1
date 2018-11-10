@@ -10,7 +10,7 @@ import AVFoundation
 
 // MARK: - PlaySoundsViewController: AVAudioPlayerDelegate
 
-extension playSoundViewController: AVAudioPlayerDelegate {
+extension PlaySoundViewController: AVAudioPlayerDelegate {
     
     // MARK: Alerts
     
@@ -99,7 +99,7 @@ extension playSoundViewController: AVAudioPlayerDelegate {
             }
             
             // schedule a stop timer for when audio finishes playing
-            self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(playSoundViewController.stopAudio), userInfo: nil, repeats: false)
+            self.stopTimer = Timer(timeInterval: delayInSeconds, target: self, selector: #selector(PlaySoundViewController.stopAudio), userInfo: nil, repeats: false)
             RunLoop.main.add(self.stopTimer!, forMode: RunLoopMode.defaultRunLoopMode)
         }
         
@@ -154,9 +154,12 @@ extension playSoundViewController: AVAudioPlayerDelegate {
     }
     
     func setPlayButtonsEnabled(_ enabled: Bool) {
-        btnLowPitch.isEnabled = enabled
         btnHighPitch.isEnabled = enabled
-        
+        btnLowPitch.isEnabled = enabled
+        btnEcho.isEnabled = enabled
+        btnFast.isEnabled = enabled
+        btnSlow.isEnabled = enabled
+        btnReverb.isEnabled = enabled
     }
 
     func showAlert(_ title: String, message: String) {

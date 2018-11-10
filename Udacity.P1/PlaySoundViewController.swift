@@ -9,11 +9,15 @@
 import UIKit
 import AVFoundation
 
-class playSoundViewController: UIViewController {
+class PlaySoundViewController: UIViewController {
 
     @IBOutlet weak var btnHighPitch: UIButton!
     @IBOutlet weak var btnLowPitch: UIButton!
     @IBOutlet weak var btnStop: UIButton!
+    @IBOutlet weak var btnSlow: UIButton!
+    @IBOutlet weak var btnFast: UIButton!
+    @IBOutlet weak var btnEcho: UIButton!
+    @IBOutlet weak var btnReverb: UIButton!
     
     var recordedAudioURL:URL!
     var audioFile:AVAudioFile!
@@ -22,12 +26,13 @@ class playSoundViewController: UIViewController {
     var stopTimer: Timer!
     
     enum ButtonType: Int {
-        case chipmunk = 0, vader
+        case slow = 0, fast, chipmunk, vader, echo, reverb
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
+        configureButton()
         // Do any additional setup after loading the view.
     }
     
@@ -37,17 +42,33 @@ class playSoundViewController: UIViewController {
 
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
+        case .slow:
+            playSound(rate: 0.5)
+        case .fast:
+            playSound(rate: 1.5)
         case .chipmunk:
             playSound(pitch: 1000)
         case .vader:
             playSound(pitch: -1000)
-        
+        case .echo:
+            playSound(echo: true)
+        case .reverb:
+            playSound(reverb: true)
         }
-        
         configureUI(.playing)
     }
     
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
         stopAudio()
+    }
+    func configureButton()
+    {
+        btnHighPitch.imageView?.contentMode = .scaleAspectFit
+        btnLowPitch.imageView?.contentMode = .scaleAspectFit
+        btnStop.imageView?.contentMode = .scaleAspectFit
+        btnSlow.imageView?.contentMode = .scaleAspectFit
+        btnFast.imageView?.contentMode = .scaleAspectFit
+        btnEcho.imageView?.contentMode = .scaleAspectFit
+        btnReverb.imageView?.contentMode = .scaleAspectFit
     }
 }

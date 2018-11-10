@@ -12,14 +12,12 @@ import AVFoundation
 class RecordViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBOutlet weak var btnGravar: UIButton!
-    
     @IBOutlet weak var lblGravacao: UILabel!
     
     var audioRecorder: AVAudioRecorder!
     var gravando: Bool = false
     override func viewDidLoad(){
         super.viewDidLoad()
-        btnGravar.imageView?.contentMode = .scaleAspectFit
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -78,7 +76,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "playRecord"
         {
-            let playSoundsVC = segue.destination as! PlaySoundViewController
+            let playSoundsVC = segue.destination as! playSoundViewController
             let recordedAudioURL = sender as! URL
             playSoundsVC.recordedAudioURL = recordedAudioURL
         }

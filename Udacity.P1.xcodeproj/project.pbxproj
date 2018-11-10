@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E06B9716215456430024067C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B9715215456430024067C /* AppDelegate.swift */; };
-		E06B9718215456440024067C /* recordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B9717215456440024067C /* recordViewController.swift */; };
+		E06B9718215456440024067C /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B9717215456440024067C /* RecordViewController.swift */; };
 		E06B971B215456470024067C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06B9719215456470024067C /* Main.storyboard */; };
 		E06B971D215457640024067C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06B971C215457640024067C /* Assets.xcassets */; };
 		E06B9720215457640024067C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06B971E215457640024067C /* LaunchScreen.storyboard */; };
-		E08F976C2159B37B003D0565 /* playSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F976B2159B37B003D0565 /* playSoundViewController.swift */; };
+		E08F976C2159B37B003D0565 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F976B2159B37B003D0565 /* PlaySoundViewController.swift */; };
 		E08F976E2159BBB0003D0565 /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08F976D2159BBB0003D0565 /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E06B97122154563B0024067C /* Udacity.P1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Udacity.P1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06B9715215456430024067C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E06B9717215456440024067C /* recordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recordViewController.swift; sourceTree = "<group>"; };
+		E06B9717215456440024067C /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		E06B971A215456470024067C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E06B971C215457640024067C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E06B971F215457640024067C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E06B9721215457640024067C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E08F976B2159B37B003D0565 /* playSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSoundViewController.swift; sourceTree = "<group>"; };
+		E08F976B2159B37B003D0565 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
 		E08F976D2159BBB0003D0565 /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,12 +59,12 @@
 			isa = PBXGroup;
 			children = (
 				E06B9715215456430024067C /* AppDelegate.swift */,
-				E06B9717215456440024067C /* recordViewController.swift */,
+				E06B9717215456440024067C /* RecordViewController.swift */,
 				E06B9719215456470024067C /* Main.storyboard */,
 				E06B971C215457640024067C /* Assets.xcassets */,
 				E06B971E215457640024067C /* LaunchScreen.storyboard */,
 				E06B9721215457640024067C /* Info.plist */,
-				E08F976B2159B37B003D0565 /* playSoundViewController.swift */,
+				E08F976B2159B37B003D0565 /* PlaySoundViewController.swift */,
 				E08F976D2159BBB0003D0565 /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = Udacity.P1;
@@ -141,8 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E06B9718215456440024067C /* recordViewController.swift in Sources */,
-				E08F976C2159B37B003D0565 /* playSoundViewController.swift in Sources */,
+				E06B9718215456440024067C /* RecordViewController.swift in Sources */,
+				E08F976C2159B37B003D0565 /* PlaySoundViewController.swift in Sources */,
 				E06B9716215456430024067C /* AppDelegate.swift in Sources */,
 				E08F976E2159BBB0003D0565 /* playsoundsviewcontroller-audio.swift in Sources */,
 			);
